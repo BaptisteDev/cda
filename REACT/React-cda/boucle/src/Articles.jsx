@@ -1,4 +1,5 @@
 import React from "react";
+import OneArticle from "./OneArticle";
 
 export default function Articles() {
   const articles = [
@@ -31,5 +32,11 @@ export default function Articles() {
         "https://images.pexels.com/photos/703014/pexels-photo-703014.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     },
   ];
-  return <div className="products-flex"></div>;
+  return (
+    <div className="products-flex">
+      {articles.map((article) => (
+        <OneArticle article={article} key={article.id}></OneArticle>
+      ))}
+    </div>
+  );
 }
