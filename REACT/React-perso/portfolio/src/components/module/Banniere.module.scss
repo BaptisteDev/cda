@@ -1,0 +1,40 @@
+.marqueContainer {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: black;
+  margin-top: 15px;
+}
+
+.marqueWrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.marqueContent {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: marquee 20s linear infinite;
+  width: max-content;
+}
+
+.slideText {
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.sizePage {
+  min-height: 100vh;
+}

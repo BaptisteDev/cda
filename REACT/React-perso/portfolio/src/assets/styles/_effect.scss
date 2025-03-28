@@ -1,0 +1,70 @@
+.loading {
+  display: flex; /* Active Flexbox */
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+  max-height: 100vh; /* Conteneur pleine hauteur */
+  min-height: 100vh; /* Conteneur pleine hauteur */
+  background-color: black; /* Couleur de fond */
+  font-size: 44px; /* Taille du texte */
+  font-weight: 300;
+  overflow: hidden; /* Cache les parties invisibles */
+  position: relative; /* Contexte pour les éléments enfants */
+  animation: bgColorChange 3s ease-out forwards;
+}
+
+.loading h1 {
+  animation: riseBehindWall 3s ease-out forwards;
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-size: 44px; /* Ajuste la taille si nécessaire */
+}
+
+@keyframes riseBehindWall {
+  0% {
+    transform: translateY(100%); /* Début depuis en bas */
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(0); /* Arrivé au centre */
+    opacity: 1;
+    font-size: 60px;
+  }
+  80% {
+    transform: translateY(0); /* Reste centré */
+    opacity: 1;
+    color: black;
+  }
+  100% {
+    transform: translateY(0); /* Reste centré */
+    opacity: 0;
+  }
+}
+
+@keyframes bgColorChange {
+  0%,
+  50% {
+    background-color: black;
+  }
+  100% {
+    background-color: white;
+  }
+}
+.main-content {
+  opacity: 0;
+  pointer-events: none; /* Empêche l'interaction lorsque masqué */
+  transition: opacity 1s ease-in-out;
+}
+
+.main-content.visible {
+  opacity: 1;
+  pointer-events: all; /* Active l'interaction lorsque visible */
+}
+
+section {
+  transition: all 0.3s ease-in-out;
+}
+section.active {
+  transform: scale(1.05); /* Exemple : mettez en évidence la section active */
+  background-color: lightblue; /* Changez le fond de la section active */
+}

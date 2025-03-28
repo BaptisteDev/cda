@@ -1,0 +1,16 @@
+.card {
+  max-width: 300px;
+  background-color: var(--gray-1);
+  color: var(--white-1);
+  h3 {
+    font-weight: 600;
+  }
+  p {
+    font-weight: 200;
+  }
+}
+@media screen and (max-width: 900px) {
+  .card {
+    max-width: 99% !important;
+  }
+}

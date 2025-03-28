@@ -1,0 +1,55 @@
+.footer {
+  background-color: black;
+  color: white;
+  height: 50vh;
+  padding: 40px;
+}
+
+.h3Text {
+  color: rgb(123, 123, 123);
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-style: italic;
+  margin-top: 75px;
+}
+
+.a {
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
+  font-weight: 200;
+
+  &:hover {
+    color: rgb(204, 204, 204);
+  }
+}
+
+.donwload {
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
+  font-weight: 200;
+  font-size: 20px;
+  cursor: pointer;
+  &:hover {
+    color: rgb(204, 204, 204);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .responsive {
+    display: flex;
+    flex-direction: column;
+    div {
+      align-items: center;
+    }
+  }
+  .footer {
+    align-items: center;
+  }
+
+  .h3Text {
+    font-size: 25px;
+  }
+}

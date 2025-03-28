@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--text-color);
+  background-color: white;
+
+  scroll-behavior: smooth;
+  // overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0px;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.button-arrow {
+  margin-top: -58px;
+  margin-bottom: 20px;
+
+  button {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    position: relative;
+    transition: transform 0.3s ease;
+    animation: moveUpDown 1s ease-in-out infinite;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+}
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}

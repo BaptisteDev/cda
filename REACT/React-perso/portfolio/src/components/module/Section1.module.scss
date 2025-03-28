@@ -1,0 +1,70 @@
+.fonttext {
+  font-family: var(--font-family-2);
+  font-weight: 100;
+  color: var(--gray-2);
+  font-size: 85px;
+  transition: color 1s ease-in-out; // Transition douce pour la couleur
+  &:hover {
+    color: rgb(43, 43, 43); // Une couleur légèrement différente
+  }
+}
+
+.sizePage {
+  min-height: 100vh;
+}
+// Responsive
+
+@media screen and (max-width: 550px) {
+  .fonttext {
+    font-size: 55px;
+  }
+}
+.posText {
+  margin-top: 70px;
+}
+.buttonArrow {
+  margin-bottom: 20px;
+  z-index: 2;
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    position: relative;
+    transition: transform 0.3s ease;
+    animation: moveUpDown 1s ease-in-out infinite;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+}
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+// Responsive
+
+@media screen and (max-width: 550px) {
+  .slidingMenu {
+    right: -300px; // Position hors de l'écran par défaut
+    width: 300px;
+  }
+}
+
+.pos {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.postionTextH1 {
+  margin-top: -120px;
+}

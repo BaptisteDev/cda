@@ -1,0 +1,9 @@
+npm creat vite@lastest
+React
+JavaScript + Swc
+
+npm i
+npm run dev
+
+npm i sass -dev
+npm run build

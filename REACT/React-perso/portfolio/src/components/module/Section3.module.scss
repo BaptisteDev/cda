@@ -1,0 +1,31 @@
+.sizePage {
+  min-height: 100vh;
+  p {
+    font-style: italic;
+    font-weight: 200;
+  }
+}
+
+.imgChess {
+  height: 290px;
+  margin-right: 20px;
+  object-fit: cover;
+}
+
+.h1Text {
+  color: rgb(204, 204, 204);
+  font-size: 60px;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 650px) {
+  .responsive {
+    flex-direction: column;
+    .responsiveP {
+      width: 100%;
+    }
+  }
+  .h1Text {
+    font-size: 34px;
+  }
+}

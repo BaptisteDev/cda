@@ -1,0 +1,35 @@
+.span {
+  background-color: rgb(68, 212, 68);
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  animation: pulseWithColor 2s infinite;
+}
+
+@keyframes pulseWithColor {
+  0% {
+    transform: scale(1);
+    background-color: rgb(106, 240, 106); /* Vert clair */
+  }
+  50% {
+    transform: scale(1.2);
+    background-color: rgb(21, 167, 21); /* Vert plus foncé */
+  }
+  100% {
+    transform: scale(1);
+    background-color: rgb(106, 240, 106); /* Retour au vert clair */
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .sizeText {
+    font-size: 13px;
+  }
+}
+
+.pos {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
