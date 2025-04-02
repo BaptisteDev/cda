@@ -1,0 +1,26 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "title": "Fight Club",
+      "year": 1999,
+      "director": "David Fincher",
+      "imdbRating": 8.8,
+      "genres": ["Drama", "Thriller"],
+      "actors": ["Brad Pitt", "Edward Norton", "Helena Bonham Carter"],
+      "posterUrl": "https://image.tmdb.org/t/p/w500/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg",
+      "summary": "An insomniac office worker and a devil-may-care soapmaker form an underground fight club that evolves into something much, much more."
+    },
+    {
+      "id": 2,
+      "title": "Once Upon a Time in Hollywood",
+      "year": 2019,
+      "director": "Quentin Tarantino",
+      "imdbRating": 7.6,
+      "genres": ["Comedy", "Drama"],
+      "actors": ["Leonardo DiCaprio", "Brad Pitt", "Margot Robbie"],
+      "posterUrl": "https://image.tmdb.org/t/p/w500/8j58iEBw9pOXFD2L0nt0ZXeHviB.jpg",
+      "summary": "A faded television actor and his stunt double strive to achieve fame and success in the final years of Hollywood's Golden Age in 1969 Los Angeles."
+    }
+  ]
+}
