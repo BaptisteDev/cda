@@ -1,0 +1,172 @@
+[
+  {
+    "id": 1,
+    "title": "Fight Club",
+    "year": 1999,
+    "director": "David Fincher",
+    "imdbRating": 8.8,
+    "genres": ["Drama", "Thriller"],
+    "actors": ["Brad Pitt", "Edward Norton", "Helena Bonham Carter"],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/bptfVGEQuv6vDTIMVCHjJ9Dz8PX.jpg",
+    "summary": "An insomniac office worker and a devil-may-care soap maker form an underground fight club that evolves into something much more."
+  },
+  {
+    "id": 2,
+    "title": "Se7en",
+    "year": 1995,
+    "director": "David Fincher",
+    "imdbRating": 8.6,
+    "genres": ["Crime", "Drama", "Mystery"],
+    "actors": ["Brad Pitt", "Morgan Freeman", "Gwyneth Paltrow"],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/69Sns8WoET6CfaYlIkHbla4l7nC.jpg",
+    "summary": "Two detectives, a rookie and a veteran, hunt a serial killer who uses the seven deadly sins as his motives."
+  },
+  {
+    "id": 3,
+    "title": "Inglourious Basterds",
+    "year": 2009,
+    "director": "Quentin Tarantino",
+    "imdbRating": 8.3,
+    "genres": ["Adventure", "Drama", "War"],
+    "actors": ["Brad Pitt", "Christoph Waltz", "Diane Kruger"],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/7sfbEnaARXDDhKm0CZ7D7uc2sbo.jpg",
+    "summary": "In Nazi-occupied France, a group of Jewish-American soldiers plot to assassinate Nazi leaders."
+  },
+  {
+    "id": 4,
+    "title": "Once Upon a Time in Hollywood",
+    "year": 2019,
+    "director": "Quentin Tarantino",
+    "imdbRating": 7.6,
+    "genres": ["Comedy", "Drama"],
+    "actors": ["Leonardo DiCaprio", "Brad Pitt", "Margot Robbie"],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/8j58iEBw9pOXFD2L0nt0ZXeHviB.jpg",
+    "summary": "A faded television actor and his stunt double strive to achieve fame and success in the final years of Hollywood's Golden Age."
+  },
+  {
+    "id": 5,
+    "title": "The Curious Case of Benjamin Button",
+    "year": 2008,
+    "director": "David Fincher",
+    "imdbRating": 7.8,
+    "genres": ["Drama", "Fantasy", "Romance"],
+    "actors": ["Brad Pitt", "Cate Blanchett", "Tilda Swinton"],
+    "posterUrl": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/17hzD5UG3RLq0BTszufC9mzXynd.jpg",
+    "summary": "Tells the story of Benjamin Button, a man who starts aging backwards with bizarre consequences."
+  },
+  {
+    "id": 6,
+    "title": "Ocean's Eleven",
+    "year": 2001,
+    "director": "Steven Soderbergh",
+    "imdbRating": 7.7,
+    "genres": ["Crime", "Thriller", "Comedy"],
+    "actors": ["Brad Pitt", "George Clooney", "Matt Damon"],
+    "posterUrl": "https://media.senscritique.com/media/000019184318/0/ocean_s_eleven.jpg",
+    "summary": "A stylish heist film where Danny Ocean and his crew plan to rob three Las Vegas casinos simultaneously."
+  },
+  {
+    "id": 7,
+    "title": "Ocean's Twelve",
+    "year": 2004,
+    "director": "Steven Soderbergh",
+    "imdbRating": 6.5,
+    "genres": ["Crime", "Thriller", "Comedy"],
+    "actors": [
+      "Brad Pitt",
+      "George Clooney",
+      "Matt Damon",
+      "Catherine Zeta-Jones"
+    ],
+    "posterUrl": "https://media.senscritique.com/media/000008232577/0/ocean_s_twelve.jpg",
+    "summary": "The crew reunites for another heist across Europe, facing increased challenges and rival teams."
+  },
+  {
+    "id": 8,
+    "title": "Ocean's Thirteen",
+    "year": 2007,
+    "director": "Steven Soderbergh",
+    "imdbRating": 6.9,
+    "genres": ["Crime", "Thriller", "Comedy"],
+    "actors": ["Brad Pitt", "George Clooney", "Matt Damon"],
+    "posterUrl": "https://media.senscritique.com/media/000016984002/0/ocean_s_thirteen.jpg",
+    "summary": "Danny Ocean and his team embark on a mission to avenge a friend's betrayal with a high-stakes casino heist."
+  },
+  {
+    "id": 9,
+    "title": "Mr. & Mrs. Smith",
+    "year": 2005,
+    "director": "Doug Liman",
+    "imdbRating": 6.5,
+    "genres": ["Action", "Comedy", "Romance"],
+    "actors": ["Brad Pitt", "Angelina Jolie"],
+    "posterUrl": "https://media.senscritique.com/media/000004019307/0/mr_mrs_smith.jpg",
+    "summary": "A bored married couple discover they are both secret assassins, leading to explosive encounters."
+  },
+  {
+    "id": 10,
+    "title": "Troy",
+    "year": 2004,
+    "director": "Wolfgang Petersen",
+    "imdbRating": 7.3,
+    "genres": ["Action", "Drama", "History"],
+    "actors": ["Brad Pitt", "Eric Bana", "Orlando Bloom"],
+    "posterUrl": "https://media.senscritique.com/media/000022469949/0/troie.png",
+    "summary": "An epic retelling of the Trojan War, focusing on the heroics of Achilles and the fate of Troy."
+  },
+  {
+    "id": 11,
+    "title": "12 Monkeys",
+    "year": 1995,
+    "director": "Terry Gilliam",
+    "imdbRating": 8.0,
+    "genres": ["Sci-Fi", "Mystery", "Thriller"],
+    "actors": ["Brad Pitt", "Madeleine Stowe", "Brad Dourif"],
+    "posterUrl": "https://media.senscritique.com/media/000004702514/0/l_armee_des_12_singes.jpg",
+    "summary": "A convict is sent back in time to stop a deadly plague, unraveling a web of conspiracy."
+  },
+  {
+    "id": 12,
+    "title": "World War Z",
+    "year": 2013,
+    "director": "Marc Forster",
+    "imdbRating": 7.0,
+    "genres": ["Action", "Adventure", "Horror"],
+    "actors": ["Brad Pitt", "Mireille Enos", "Daniella Kertesz"],
+    "posterUrl": "https://media.senscritique.com/media/000005745733/0/world_war_z.png",
+    "summary": "A former UN investigator travels the world to stop a zombie pandemic threatening humanity."
+  },
+  {
+    "id": 13,
+    "title": "Killing Them Softly",
+    "year": 2012,
+    "director": "Andrew Dominik",
+    "imdbRating": 7.2,
+    "genres": ["Crime", "Drama", "Thriller"],
+    "actors": ["Brad Pitt", "Richard Jenkins", "Ben Mendelsohn"],
+    "posterUrl": "https://media.senscritique.com/media/000008508205/0/cogan_killing_them_softly.jpg",
+    "summary": "A mob enforcer investigates a heist that disrupts the delicate balance of organized crime."
+  },
+  {
+    "id": 14,
+    "title": "By the Sea",
+    "year": 2015,
+    "director": "Angelina Jolie",
+    "imdbRating": 5.9,
+    "genres": ["Drama", "Romance"],
+    "actors": ["Brad Pitt", "Angelina Jolie"],
+    "posterUrl": "https://media.senscritique.com/media/000012700341/0/vue_sur_mer.jpg",
+    "summary": "A couple retreats to a French seaside resort, exploring their troubled relationship amidst isolation."
+  },
+  {
+    "id": 15,
+    "title": "Bullet Train",
+    "year": 2022,
+    "director": "David Leitch",
+    "imdbRating": 7.3,
+    "genres": ["Action", "Comedy", "Thriller"],
+    "actors": ["Brad Pitt", "Joey King", "Aaron Taylor-Johnson"],
+    "posterUrl": "https://media.senscritique.com/media/000020771317/0/bullet_train.png",
+    "summary": "Five assassins find themselves on a high-speed train with interconnected missions and deadly consequences."
+  }
+]
