@@ -9,6 +9,10 @@ export default function ExpenseProvider({ children }) {
     setUser(values);
   }
 
+  const login = (credentials) => {
+    setUser(credentials);
+  };
+
   function logout() {
     setUser(null);
   }
@@ -19,6 +23,7 @@ export default function ExpenseProvider({ children }) {
         user,
         registerUser,
         logout,
+        login,
       }}
     >
       {children}

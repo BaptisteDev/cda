@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useForm } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
-
+import { AuthContext } from "../../context/AuthContext";
 export default function Login() {
+  const { login } = useContext(AuthContext);
+
   const schema = yup.object({
     username: yup.string().required("Le champ est obligatoire"),
     password: yup.string().required("Le champ est obligatoire"),
@@ -26,8 +28,8 @@ export default function Login() {
   });
 
   function submit(values) {
-    console.log(values);
-    //reset(defaultValues);
+    login(values);
+    // reset(defaultValues);
   }
 
   return (
