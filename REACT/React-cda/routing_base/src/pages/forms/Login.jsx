@@ -3,8 +3,11 @@ import { useForm } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { AuthContext } from "../../context/AuthContext";
+import { useNavigate } from "react-router-dom";
+import toast from "react-hot-toast";
 
 export default function Login() {
+  const navigate = useNavigate();
   const { login } = useContext(AuthContext);
   const schema = yup.object({
     username: yup.string().required("Le champ est obligatoire"),
@@ -28,6 +31,8 @@ export default function Login() {
 
   function submit(values) {
     login(values);
+    toast.success("Connexion réussie");
+    navigate("/");
     // reset(defaultValues);
   }
   return (

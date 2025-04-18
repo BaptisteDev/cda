@@ -20,9 +20,9 @@ export default function Header() {
             <a className="mr-4" href="#" onClick={logout}>
               <span>Déconnexion</span>
             </a>
-            <a className="mr-4" href="#">
+            <NavLink to="/profile" className="mr-4" href="#">
               <span>Profile</span>
-            </a>
+            </NavLink>
           </>
         ) : (
           <>

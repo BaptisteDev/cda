@@ -2,8 +2,10 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
+import { useNavigate } from "react-router-dom";
 
 export default function Register() {
+  const navigate = useNavigate();
   const schema = yup.object({
     username: yup.string().required("Le champ est obligatoire"),
     email: yup
@@ -52,6 +54,7 @@ export default function Register() {
 
   function submit(values) {
     console.log(values);
+    navigate("/login");
   }
   return (
     <div className="flex-1 flex items-center justify-center">
