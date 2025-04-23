@@ -1,0 +1,206 @@
+[
+  {
+    "id": 1,
+    "name": "Minecraft",
+    "image": "/src/assets/images/logo-games/minecraft.svg",
+    "price": 10,
+    "description": "Idéal pour du développement",
+    "specs": [
+      { "icon": "/src/assets/images/spec/cpu.svg", "text": "Ryzen 5 - 3600XT" },
+      { "icon": "/src/assets/images/spec/ram.svg", "text": "16 go de ram" },
+      { "icon": "/src/assets/images/spec/ssd.svg", "text": "40 go NVME" },
+      {
+        "icon": "/src/assets/images/spec/ddos.svg",
+        "text": "Protection ANTI-DDOS"
+      }
+    ],
+    "promo": "on"
+  },
+  {
+    "id": 2,
+    "name": "Minecraft",
+    "image": "/src/assets/images/logo-games/minecraft.svg",
+    "price": 20,
+    "description": "Serveur Minecraft dédié",
+    "specs": [
+      { "icon": "/src/assets/images/spec/cpu.svg", "text": "Ryzen 5 - 3600XT" },
+      { "icon": "/src/assets/images/spec/ram.svg", "text": "16 go de ram" },
+      { "icon": "/src/assets/images/spec/ssd.svg", "text": "40 go NVME" },
+      {
+        "icon": "/src/assets/images/spec/ddos.svg",
+        "text": "Protection ANTI-DDOS"
+      }
+    ],
+    "promo": "off"
+  },
+  {
+    "id": 3,
+    "name": "Minecraft",
+    "image": "/src/assets/images/logo-games/minecraft.svg",
+    "price": 30,
+    "description": "Parfait pour des parties en ligne",
+    "specs": [
+      { "icon": "/src/assets/images/spec/cpu.svg", "text": "Ryzen 5 - 3600XT" },
+      { "icon": "/src/assets/images/spec/ram.svg", "text": "16 go de ram" },
+      { "icon": "/src/assets/images/spec/ssd.svg", "text": "40 go NVME" },
+      {
+        "icon": "/src/assets/images/spec/ddos.svg",
+        "text": "Protection ANTI-DDOS"
+      }
+    ],
+    "promo": "off"
+  },
+  {
+    "id": 4,
+    "name": "Minecraft",
+    "image": "/src/assets/images/logo-games/minecraft.svg",
+    "price": 40,
+    "description": "Idéal pour les serveurs multijoueurs",
+    "specs": [
+      { "icon": "/src/assets/images/spec/cpu.svg", "text": "Ryzen 5 - 3600XT" },
+      { "icon": "/src/assets/images/spec/ram.svg", "text": "16 go de ram" },
+      { "icon": "/src/assets/images/spec/ssd.svg", "text": "40 go NVME" },
+      {
+        "icon": "/src/assets/images/spec/ddos.svg",
+        "text": "Protection ANTI-DDOS"
+      }
+    ],
+    "promo": "off"
+  },
+  {
+    "id": 5,
+    "name": "Minecraft",
+    "image": "/src/assets/images/logo-games/minecraft.svg",
+    "price": 50,
+    "description": "Serveur privé Minecraft",
+    "specs": [
+      { "icon": "/src/assets/images/spec/cpu.svg", "text": "Ryzen 5 - 3600XT" },
+      { "icon": "/src/assets/images/spec/ram.svg", "text": "16 go de ram" },
+      { "icon": "/src/assets/images/spec/ssd.svg", "text": "40 go NVME" },
+      {
+        "icon": "/src/assets/images/spec/ddos.svg",
+        "text": "Protection ANTI-DDOS"
+      }
+    ],
+    "promo": "off"
+  },
+  {
+    "id": 6,
+    "name": "Minecraft",
+    "image": "/src/assets/images/logo-games/minecraft.svg",
+    "price": 60,
+    "description": "Serveur Minecraft pour modding",
+    "specs": [
+      { "icon": "/src/assets/images/spec/cpu.svg", "text": "Ryzen 5 - 3600XT" },
+      { "icon": "/src/assets/images/spec/ram.svg", "text": "16 go de ram" },
+      { "icon": "/src/assets/images/spec/ssd.svg", "text": "40 go NVME" },
+      {
+        "icon": "/src/assets/images/spec/ddos.svg",
+        "text": "Protection ANTI-DDOS"
+      }
+    ],
+    "promo": "on"
+  },
+  {
+    "id": 7,
+    "name": "Garry's Mod",
+    "image": "/src/assets/images/logo-games/garrys-mod.svg",
+    "price": 10,
+    "description": "Idéal pour du développement",
+    "specs": [
+      { "icon": "/src/assets/images/spec/cpu.svg", "text": "Ryzen 5 - 3600XT" },
+      { "icon": "/src/assets/images/spec/ram.svg", "text": "16 go de ram" },
+      { "icon": "/src/assets/images/spec/ssd.svg", "text": "40 go NVME" },
+      {
+        "icon": "/src/assets/images/spec/ddos.svg",
+        "text": "Protection ANTI-DDOS"
+      }
+    ],
+    "promo": "on"
+  },
+  {
+    "id": 8,
+    "name": "Garry's Mod",
+    "image": "/src/assets/images/logo-games/garrys-mod.svg",
+    "price": 20,
+    "description": "Serveur garrys-mod dédié",
+    "specs": [
+      { "icon": "/src/assets/images/spec/cpu.svg", "text": "Ryzen 5 - 3600XT" },
+      { "icon": "/src/assets/images/spec/ram.svg", "text": "16 go de ram" },
+      { "icon": "/src/assets/images/spec/ssd.svg", "text": "40 go NVME" },
+      {
+        "icon": "/src/assets/images/spec/ddos.svg",
+        "text": "Protection ANTI-DDOS"
+      }
+    ],
+    "promo": "off"
+  },
+  {
+    "id": 9,
+    "name": "Garry's Mod",
+    "image": "/src/assets/images/logo-games/garrys-mod.svg",
+    "price": 30,
+    "description": "Parfait pour des parties en ligne",
+    "specs": [
+      { "icon": "/src/assets/images/spec/cpu.svg", "text": "Ryzen 5 - 3600XT" },
+      { "icon": "/src/assets/images/spec/ram.svg", "text": "16 go de ram" },
+      { "icon": "/src/assets/images/spec/ssd.svg", "text": "40 go NVME" },
+      {
+        "icon": "/src/assets/images/spec/ddos.svg",
+        "text": "Protection ANTI-DDOS"
+      }
+    ],
+    "promo": "off"
+  },
+  {
+    "id": 10,
+    "name": "Garry's Mod",
+    "image": "/src/assets/images/logo-games/garrys-mod.svg",
+    "price": 40,
+    "description": "Idéal pour les serveurs multijoueurs",
+    "specs": [
+      { "icon": "/src/assets/images/spec/cpu.svg", "text": "Ryzen 5 - 3600XT" },
+      { "icon": "/src/assets/images/spec/ram.svg", "text": "16 go de ram" },
+      { "icon": "/src/assets/images/spec/ssd.svg", "text": "40 go NVME" },
+      {
+        "icon": "/src/assets/images/spec/ddos.svg",
+        "text": "Protection ANTI-DDOS"
+      }
+    ],
+    "promo": "off"
+  },
+  {
+    "id": 11,
+    "name": "Garry's Mod",
+    "image": "/src/assets/images/logo-games/garrys-mod.svg",
+    "price": 50,
+    "description": "Serveur privé garrys-mod",
+    "specs": [
+      { "icon": "/src/assets/images/spec/cpu.svg", "text": "Ryzen 5 - 3600XT" },
+      { "icon": "/src/assets/images/spec/ram.svg", "text": "16 go de ram" },
+      { "icon": "/src/assets/images/spec/ssd.svg", "text": "40 go NVME" },
+      {
+        "icon": "/src/assets/images/spec/ddos.svg",
+        "text": "Protection ANTI-DDOS"
+      }
+    ],
+    "promo": "off"
+  },
+  {
+    "id": 12,
+    "name": "Garry's Mod",
+    "image": "/src/assets/images/logo-games/garrys-mod.svg",
+    "price": 60,
+    "description": "Serveur garrys-mod pour modding",
+    "specs": [
+      { "icon": "/src/assets/images/spec/cpu.svg", "text": "Ryzen 5 - 3600XT" },
+      { "icon": "/src/assets/images/spec/ram.svg", "text": "16 go de ram" },
+      { "icon": "/src/assets/images/spec/ssd.svg", "text": "40 go NVME" },
+      {
+        "icon": "/src/assets/images/spec/ddos.svg",
+        "text": "Protection ANTI-DDOS"
+      }
+    ],
+    "promo": "on"
+  }
+]
