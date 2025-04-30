@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Minecraft",
+    "image": "/src/assets/images/logo-games/minecraft.svg",
+    "price": 19.99
+  },
+  {
+    "id": 2,
+    "name": "Garry's Mod",
+    "image": "/src/assets/images/logo-games/garrys-mod.svg",
+    "price": 9.99
+  },
+  {
+    "id": 3,
+    "name": "Ark",
+    "image": "/src/assets/images/logo-games/ark.svg",
+    "price": 29.99
+  },
+  {
+    "id": 4,
+    "name": "Rust",
+    "image": "/src/assets/images/logo-games/rust.svg",
+    "price": 39.99
+  },
+  {
+    "id": 5,
+    "name": "Arma",
+    "image": "/src/assets/images/logo-games/arma.svg",
+    "price": 49.99
+  },
+  {
+    "id": 6,
+    "name": "DayZ",
+    "image": "/src/assets/images/logo-games/dayz.svg",
+    "price": 44.99
+  },
+  {
+    "id": 7,
+    "name": "Five M",
+    "image": "/src/assets/images/logo-games/fivem.svg",
+    "price": 10.0
+  },
+  {
+    "id": 8,
+    "name": "Counter Strike 2",
+    "image": "/src/assets/images/logo-games/cs.svg",
+    "price": 10.0
+  },
+  {
+    "id": 9,
+    "name": "Palworld",
+    "image": "/src/assets/images/logo-games/pall.svg",
+    "price": 29.99
+  },
+  {
+    "id": 10,
+    "name": "Satisfactory",
+    "image": "/src/assets/images/logo-games/satisfactory.svg",
+    "price": 27.99
+  }
+]
