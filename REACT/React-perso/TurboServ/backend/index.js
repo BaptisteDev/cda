@@ -26,4 +26,6 @@ mongoose
   })
   .catch((err) => console.log(err));
 
-app.listen(3000);
+app.listen(3000, () => {
+  console.log("Server demare sur http://localhost:3000");
+});

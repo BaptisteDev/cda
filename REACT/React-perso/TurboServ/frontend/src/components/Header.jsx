@@ -236,7 +236,7 @@ export default function Header() {
             {user ? (
               <ul className="flex items-center  md:flex-row md:items-center md:space-x-4">
                 <li className="mt-4 mx-3 md:m-0 md:mr-2">
-                  <NavLink to="/profile" className="btn-white w-[130px]">
+                  <NavLink to="/profil" className="btn-white w-[130px]">
                     <span>Profile</span>
                   </NavLink>
                 </li>
@@ -272,7 +272,7 @@ export default function Header() {
         </div>
       </nav>
       <div className="h-[50px] bg-primary  flex items-center">
-        <div className="flex justify-between items-center px-2 container">
+        <div className="flex justify-between items-center px-2 container ">
           <h3 className="text-white">Bienvenue chez TurboServ</h3>
           <div className="">
             <a href="#" className="text-white mr-2">

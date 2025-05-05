@@ -5,9 +5,10 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { AuthContext } from "../../context/AuthContext";
 import { useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
+import { signin } from "../../apis/auth.api";
 
 export default function Login() {
-  const { login } = useContext(AuthContext);
+  const { login, user } = useContext(AuthContext);
   const navigate = useNavigate();
   const schema = yup.object({
     email: yup
@@ -38,18 +39,10 @@ export default function Login() {
 
   async function submit(values) {
     try {
-      const response = await fetch("http://localhost:3000/user/login", {
-        method: "POST",
-        body: JSON.stringify(values),
-        headers: {
-          "Content-type": "application/json",
-        },
-      });
-      const user = await response.json();
-
-      if (response.ok) {
+      const response = await signin(values);
+      if (!response.message) {
         toast.success("Connexion réussie");
-        login(user);
+        login(response);
         navigate("/");
       } else {
         toast.error("Connexion échoué");
@@ -58,6 +51,7 @@ export default function Login() {
       console.log(error);
     }
   }
+
   return (
     <div className="flex-1 flex items-center justify-center">
       <div className="w-full max-w-md p-6 bg-white shadow-xl rounded">

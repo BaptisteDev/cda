@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import { ExpanseContext } from "../../context/ExpanseContext";
 import toast from "react-hot-toast";
 import { AuthContext } from "../../context/AuthContext";
+import { addAnExpense } from "../../apis/expense.api";
 function ExpenseForm() {
   const { addExpense } = useContext(ExpanseContext);
   const { user } = useContext(AuthContext);
@@ -30,14 +31,8 @@ function ExpenseForm() {
     e.preventDefault();
     if (expense.description && expense.amount && expense.date) {
       // requete fetch pour envoyer les valeurs
-      const response = await fetch("http://localhost:3000/expense", {
-        method: "POST",
-        body: JSON.stringify({ ...expense, user: user._id }),
-        headers: {
-          "Content-type": "application/json",
-        },
-      });
-      if (response.ok) {
+      const response = await addAnExpense();
+      if (!response.message) {
         addExpense(expense);
         setExpense({
           description: "",

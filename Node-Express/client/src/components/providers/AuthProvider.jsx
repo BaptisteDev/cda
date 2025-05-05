@@ -2,18 +2,6 @@ import React, { useEffect, useState } from "react";
 import { AuthContext } from "../../context/AuthContext";
 
 export default function AuthProvider({ children }) {
-  useEffect(() => {
-    const getAllUsers = async () => {
-      try {
-        const response = await fetch("http://localhost:3000/user");
-        const allUsers = await response.json();
-      } catch (error) {
-        console.log(error);
-      }
-    };
-    getAllUsers();
-  }, []);
-
   const [user, setUser] = useState(() => {
     const connectedUser = localStorage.getItem("user");
     return connectedUser ? JSON.parse(connectedUser) : null;

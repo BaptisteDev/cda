@@ -59,3 +59,30 @@
     padding: 0 8%;
   }
 }
+
+.spinner {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: conic-gradient(#2e2e2e 0deg 180deg, #6d6d6d 180deg 360deg);
+  animation: rotate 0.5s linear infinite;
+  mask: radial-gradient(
+    farthest-side,
+    transparent calc(100% - 4px),
+    black calc(100% - 3px)
+  );
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.active {
+  font-weight: 600;
+}

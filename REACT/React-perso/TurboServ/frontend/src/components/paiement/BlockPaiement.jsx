@@ -1,9 +1,10 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import serverGames from "../../data/GameList.json";
 import { PaiementContext } from "../../context/PaiementContext";
 
 export default function BlockPaiement() {
-  const { changeServer, server, priceServer } = useContext(PaiementContext);
+  const { changeServer, priceServer, changeModele, priceModele } =
+    useContext(PaiementContext);
   return (
     <form className="mt-8">
       <div className="flex flex-wrap items-center justify-center">
@@ -38,26 +39,25 @@ export default function BlockPaiement() {
               onChange={(e) => changeServer(e.target.value)}
             >
               <option value="">-- Choisir --</option>
-              {serverGames.map((server) => (
-                <option
-                  value={JSON.stringify(server)}
-                  className="cursor-pointer"
-                >
-                  {server.name}
+              {serverGames.map((s) => (
+                <option key={s.id} value={JSON.stringify(s)}>
+                  {s.name}
                 </option>
               ))}
             </select>
-            <label for="serverGames" className="text-white mb-2 mt-3">
+
+            <label for="modele" className="text-white mb-2 mt-3">
               Modèles :
             </label>
             <select
-              id="serverGames"
+              id="modele"
               className="bg-white text-black border border-gray-300 rounded p-2 cursor-pointer"
+              onChange={(e) => changeModele(e.target.value)}
             >
               <option value="">-- Choisir --</option>
-              {serverGames.map((server) => (
-                <option value="minecraft" className="cursor-pointer">
-                  {server.name}
+              {serverGames.map((s) => (
+                <option key={s.id} value={JSON.stringify(s)}>
+                  {s.name}
                 </option>
               ))}
             </select>
@@ -80,8 +80,8 @@ export default function BlockPaiement() {
                 className="mt-3 bg-white text-black border border-gray-300 rounded p-2 cursor-pointer w-full"
               >
                 <option value="">-- Choisir de la ram --</option>
-                <option value="ram" className="cursor-pointer">
-                  32 go ram + 5.99€
+                <option value="0" className="cursor-pointer">
+                  4 go ram
                 </option>
               </select>
               <select
@@ -151,8 +151,8 @@ export default function BlockPaiement() {
                   <p className="font-bold my-4">TOTAL :</p>
                 </div>
                 <div className="">
-                  <p className="my-2">{priceServer}</p>
-                  <p className="my-2">40.00€</p>
+                  <p className="my-2">{priceServer} €</p>
+                  <p className="my-2">{priceModele} €</p>
                   <p className="my-2">5.99€</p>
                   <p className="my-2">5.99€</p>
                   <p className="my-2">2.99€</p>

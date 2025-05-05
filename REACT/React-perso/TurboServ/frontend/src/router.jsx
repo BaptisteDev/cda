@@ -8,6 +8,12 @@ import UserNotConnected from "./components/protectedRoutes/UserNotConnected";
 import UserConnected from "./components/protectedRoutes/UserConnected";
 import Profile from "./pages/profile/Profile";
 import ServerGames from "./pages/server/ServerGames";
+import MyServer from "./pages/profile/pages/MyServer";
+import MyTemplate from "./pages/profile/pages/MyTemplate";
+import MyPurchase from "./pages/profile/pages/MyPurchase";
+import MyTickets from "./pages/profile/pages/MyTickets";
+import MyAffiliate from "./pages/profile/pages/MyAffiliate";
+
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -39,12 +45,57 @@ export const router = createBrowserRouter([
         element: <ServerGames></ServerGames>,
       },
       {
-        path: "/profile",
-        element: (
-          <UserConnected>
-            <Profile></Profile>
-          </UserConnected>
-        ),
+        path: "/profil",
+        children: [
+          {
+            index: true,
+            element: (
+              <UserConnected>
+                <Profile />
+              </UserConnected>
+            ),
+          },
+          {
+            path: "/profil/mes-serveurs",
+            element: (
+              <UserConnected>
+                <MyServer />
+              </UserConnected>
+            ),
+          },
+          {
+            path: "/profil/mes-modèles",
+            element: (
+              <UserConnected>
+                <MyTemplate />
+              </UserConnected>
+            ),
+          },
+          {
+            path: "/profil/mes-achats",
+            element: (
+              <UserConnected>
+                <MyPurchase />
+              </UserConnected>
+            ),
+          },
+          {
+            path: "/profil/mes-tickets",
+            element: (
+              <UserConnected>
+                <MyTickets />
+              </UserConnected>
+            ),
+          },
+          {
+            path: "/profil/mes-affiliations",
+            element: (
+              <UserConnected>
+                <MyAffiliate />
+              </UserConnected>
+            ),
+          },
+        ],
       },
     ],
   },

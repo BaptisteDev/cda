@@ -4,6 +4,7 @@ import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
+import { signup } from "../../apis/auth.api";
 export default function Register() {
   const navigate = useNavigate();
   const schema = yup.object({
@@ -55,16 +56,12 @@ export default function Register() {
   async function submit(values) {
     console.log(values);
     try {
-      const response = await fetch("http://localhost:3000/user", {
-        method: "POST",
-        body: JSON.stringify(values),
-        headers: {
-          "Content-type": "application/json",
-        },
-      });
-      const feedback = await response.json();
+      const feedback = await signup(values);
+      console.log(feedback);
 
-      if (response.ok) {
+      if (
+        feedback.message === "Inscrtiption réussie ! Veuillez vous connecter"
+      ) {
         reset(defaultValues);
         toast.success(feedback.message);
         navigate("/login");

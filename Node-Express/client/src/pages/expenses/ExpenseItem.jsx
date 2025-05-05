@@ -4,6 +4,13 @@ import { NavLink } from "react-router-dom";
 
 function ExpenseItem({ expence }) {
   const { deleteExpense } = useContext(ExpanseContext);
+
+  const dateObj = new Date(expence.date);
+  const dateFR = dateObj.toLocaleDateString("fr-FR", {
+    day: "2-digit",
+    month: "2-digit",
+    year: "numeric",
+  });
   return (
     <NavLink to={`/details/${expence.id}`}>
       <div className="flex flex-col md:flex-row justify-between items-center p-4 border border-gray-200 rounded bg-gray-50">
@@ -13,7 +20,7 @@ function ExpenseItem({ expence }) {
               {expence.description}
             </h3>
             <p className="text-gray-600">Montant: {expence.amount} €</p>
-            <p className="text-gray-600">Date: {expence.date}</p>
+            <p className="text-gray-600">Date: {dateFR}</p>
           </div>
           <div className="flex gap-2">
             <button className="bg-green-500 text-white px-3 py-2 rounded hover:bg-green-600">

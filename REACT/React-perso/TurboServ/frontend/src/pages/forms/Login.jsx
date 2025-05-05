@@ -7,9 +7,11 @@ import toast from "react-hot-toast";
 import { AuthContext } from "../../context/AuthContext";
 import { FaGoogle } from "react-icons/fa";
 import { FaDiscord } from "react-icons/fa";
+import { signin } from "../../apis/auth.api";
+
 export default function Login() {
   const navigate = useNavigate();
-  const { login } = useContext(AuthContext);
+  const { login, spinner, setSpinner } = useContext(AuthContext);
 
   const schema = yup.object({
     email: yup
@@ -39,29 +41,23 @@ export default function Login() {
   });
 
   async function submit(values) {
-    console.log(values);
     try {
-      const response = await fetch("http://localhost:3000/user/login", {
-        method: "POST",
-        body: JSON.stringify(values),
-        headers: {
-          "Content-type": "application/json",
-        },
-      });
-      const user = await response.json();
-      console.log(user);
-      if (response.status === 200) {
+      const response = await signin(values);
+      if (!response.message) {
+        setSpinner(true);
         await new Promise((resolve) => setTimeout(resolve, 2000));
         toast.success("Connexion réussie");
-        login(user);
+        login(response);
         navigate("/");
+        setSpinner(false);
       } else {
-        toast.error("Compte introuvable");
+        toast.error(response.message);
       }
     } catch (error) {
       console.log(error);
     }
   }
+
   return (
     <div className="flex-1 flex items-center justify-center mt-20">
       <div className="w-full  max-w-md p-6 bg-white  rounded">
@@ -98,10 +94,19 @@ export default function Login() {
             )}
           </div>
 
-          <div className="flex justify-center">
-            <button className="bg-primary text-white w-[250px] h-[50px] px-4 py-2 rounded hover:bg-hover transition-all cursor-pointer">
-              Se connecter
-            </button>
+          <div className=" flex justify-center">
+            {spinner == true ? (
+              <button
+                className="bg-gray-600 text-white w-[250px] h-[50px] px-4 py-2 rounded transition-all flex justify-center items-center "
+                disabled
+              >
+                <span className="spinner"></span>
+              </button>
+            ) : (
+              <button className="bg-primary text-white w-[250px] h-[50px] px-4 py-2 rounded hover:bg-hover transition-all flex justify-center items-center cursor-pointer">
+                <span>Se connecter</span>
+              </button>
+            )}
           </div>
         </form>
         <div className="flex justify-center mt-5">

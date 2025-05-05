@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useForm } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -6,7 +6,10 @@ import { NavLink, useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
 import { FaGoogle } from "react-icons/fa";
 import { FaDiscord } from "react-icons/fa";
+import { AuthContext } from "../../context/AuthContext";
+import { signup } from "../../apis/auth.api";
 export default function Register() {
+  const { spinner, setSpinner } = useContext(AuthContext);
   const navigate = useNavigate();
   const schema = yup.object({
     email: yup
@@ -53,22 +56,20 @@ export default function Register() {
   });
 
   async function submit(values) {
-    console.log(values);
     try {
-      const response = await fetch("http://localhost:3000/user", {
-        method: "POST",
-        body: JSON.stringify(values),
-        headers: {
-          "Content-type": "application/json",
-        },
-      });
-      const newUser = await response.json();
-      console.log(newUser);
+      const response = await signup(values);
 
-      await new Promise((resolve) => setTimeout(resolve, 2000));
-      toast.success("Inscription réussie");
-
-      navigate("/login");
+      if (
+        response.message === "Inscrtiption réussie ! Veuillez vous connecter"
+      ) {
+        setSpinner(true);
+        await new Promise((resolve) => setTimeout(resolve, 2000));
+        toast.success("Inscription réussie");
+        setSpinner(false);
+        navigate("/login");
+      } else {
+        toast.error(response.message);
+      }
     } catch (error) {
       console.log(error);
     }
@@ -136,10 +137,19 @@ export default function Register() {
               <p className="text-red-500">{errors.rgpd.message}</p>
             )}
           </div>
-          <div className="flex justify-center">
-            <button className="bg-primary text-white w-[250px] h-[50px] px-4 py-2 rounded hover:bg-hover transition-all cursor-pointer">
-              S'inscrire
-            </button>
+          <div className="flex justify-center items-center">
+            {spinner == true ? (
+              <button
+                className="bg-gray-600 text-white w-[250px] h-[50px] px-4 py-2 rounded transition-all flex justify-center items-center "
+                disabled
+              >
+                <span className="spinner"></span>
+              </button>
+            ) : (
+              <button className="bg-primary text-white w-[250px] h-[50px] px-4 py-2 rounded hover:bg-hover transition-all flex justify-center items-center cursor-pointer">
+                <span> S'inscrire</span>
+              </button>
+            )}
           </div>
         </form>
         <div className="flex justify-center mt-5">
